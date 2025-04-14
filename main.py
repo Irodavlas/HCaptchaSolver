@@ -12,9 +12,9 @@ import asyncio
 @app.route("/",methods=["POST"])
 def solve_captcha():
     #image = "974ad16a3cfb36d5dc58c9e949c112cac5b579b7308f38751c8128f790036dc7.png"
-    
-    captcha_type = "yesno"
-    challenge_prompt = "Click the numbers greater than the one shown in the picture"
+     
+    captcha_type = "yesno" #Change this value to test the various kind of captcha solvers
+    challenge_prompt = "Click the numbers greater than the one shown in the picture" # as for rn the prompt matters only for numbers type
     content = request.json
     images_path = []
     print(content.values()) 
